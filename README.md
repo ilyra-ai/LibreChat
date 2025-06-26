@@ -196,6 +196,16 @@ If you'd like to help translate LibreChat into your language, we'd love your con
 
 ---
 
+## MySQL Migration Example
+
+Use `node config/migrate-to-mysql.js` to copy user data to a MySQL database. Configure connection variables `MYSQL_HOST`, `MYSQL_PORT`, `MYSQL_USER`, `MYSQL_PASSWORD` and `MYSQL_DATABASE`.
+
+### HostGator Deployment
+
+Run `npm run package:hostgator` to build the project and create `hostgator.zip`. Upload this file to `public_html` and extract it before configuring MySQL.
+
+---
+
 ## 🎉 Special Thanks
 
 We thank [Locize](https://locize.com) for their translation management tools that support multiple languages in LibreChat.

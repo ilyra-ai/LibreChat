@@ -38,6 +38,7 @@
     "backend": "cross-env NODE_ENV=production node api/server/index.js",
     "backend:dev": "cross-env NODE_ENV=development npx nodemon api/server/index.js",
     "backend:stop": "node config/stop-backend.js",
+    "build": "npm run frontend",
     "build:data-provider": "cd packages/data-provider && npm run build",
     "build:mcp": "cd packages/mcp && npm run build",
     "build:data-schemas": "cd packages/data-schemas && npm run build",
@@ -71,7 +72,8 @@
     "b:test:api": "cd api && bun run b:test",
     "b:balance": "bun config/add-balance.js",
     "b:list-balances": "bun config/list-balances.js",
-    "reset-terms": "node config/reset-terms.js"
+    "reset-terms": "node config/reset-terms.js",
+    "package:hostgator": "node config/prepare-hostgator.js"
   },
   "repository": {
     "type": "git",
