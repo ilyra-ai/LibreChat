@@ -8,6 +8,7 @@
     "packages/*"
   ],
   "scripts": {
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
     "update": "node config/update.js",
     "add-balance": "node config/add-balance.js",
     "set-balance": "node config/set-balance.js",
