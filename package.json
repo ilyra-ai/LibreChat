@@ -73,7 +73,8 @@
     "b:balance": "bun config/add-balance.js",
     "b:list-balances": "bun config/list-balances.js",
     "reset-terms": "node config/reset-terms.js",
-    "package:hostgator": "node config/prepare-hostgator.js"
+    "package:hostgator": "node config/prepare-hostgator.js",
+    "migrate:mysql": "node config/migrate-to-mysql.js"
   },
   "repository": {
     "type": "git",
